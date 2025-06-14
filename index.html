@@ -128,7 +128,7 @@
           </li>
 
           <li>
-            
+
           </li>
 
           <!-- Wallet -->
@@ -141,8 +141,26 @@
             <div class="contact-info">
               <p class="contact-title">Wallet Address</p>
 
-              <a class="contact-link">0x49d007af88460e07388540101c95a91F766A2F2b</a>
-            </div>
+              <!-- <a class="contact-link">0x49d007af88460e07388540101c95a91F766A2F2b</a> -->
+
+              <!-- Copy Wallet Section -->
+             <div class=" contact-link copy-container">
+                <span id="wallet-address" class="wallet-address">
+                  0x49d007af88460e07388540101c95a91F766A2F2b
+                </span>
+
+                <button onclick="copyWalletAddress()" class="copy-btn" title="Copy to clipboard">
+                  <!-- Copy Icon SVG -->
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                       fill="none" viewBox="0 0 24 24" stroke="currentColor" 
+                       width="20" height="20">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                          d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8l4 4v6a2 2 0 01-2 2h-2M8 16v4a2 2 0 002 2h4a2 2 0 002-2v-4H8z" />
+                  </svg>
+                </button>
+              
+                <!-- Tooltip -->
+                <span id="copied-tooltip" class="tooltip">Copied!</span>
 
           </li>
 

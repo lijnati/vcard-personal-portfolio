@@ -157,3 +157,20 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// Wallet
+
+  function copyWalletAddress() {
+    const walletText = document.getElementById("wallet-address").innerText;
+    const tooltip = document.getElementById("copied-tooltip");
+
+    navigator.clipboard.writeText(walletText).then(() => {
+      tooltip.classList.add('show');
+      setTimeout(() => {
+        tooltip.classList.remove('show');
+      }, 2000);
+    }).catch(err => {
+      console.error("Copy failed:", err);
+    });
+  }
